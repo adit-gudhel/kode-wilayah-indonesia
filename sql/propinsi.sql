@@ -1,0 +1,91 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jul 05, 2022 at 12:07 PM
+-- Server version: 8.0.29
+-- PHP Version: 7.4.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `simpus_ng`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `propinsi`
+--
+
+CREATE TABLE `propinsi` (
+  `propinsi_id` varchar(2) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `propinsi` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `propinsi`
+--
+
+INSERT INTO `propinsi` (`propinsi_id`, `propinsi`, `created_at`, `updated_at`) VALUES
+('11', 'ACEH', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('12', 'SUMATERA UTARA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('13', 'SUMATERA BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('14', 'RIAU', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('15', 'JAMBI', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('16', 'SUMATERA SELATAN', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('17', 'BENGKULU', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('18', 'LAMPUNG', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('19', 'KEPULAUAN BANGKA BELITUNG', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('21', 'KEPULAUAN RIAU', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('31', 'DKI JAKARTA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('32', 'JAWA BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('33', 'JAWA TENGAH', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('34', 'DAERAH ISTIMEWA YOGYAKARTA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('35', 'JAWA TIMUR', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('36', 'BANTEN', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('51', 'BALI', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('52', 'NUSA TENGGARA BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('53', 'NUSA TENGGARA TIMUR', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('61', 'KALIMANTAN BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('62', 'KALIMANTAN TENGAH', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('63', 'KALIMANTAN SELATAN', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('64', 'KALIMANTAN TIMUR', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('65', 'KALIMANTAN UTARA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('71', 'SULAWESI UTARA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('72', 'SULAWESI TENGAH', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('73', 'SULAWESI SELATAN', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('74', 'SULAWESI TENGGARA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('75', 'GORONTALO', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('76', 'SULAWESI BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('81', 'MALUKU', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('82', 'MALUKU UTARA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('91', 'PAPUA', '2022-07-05 05:02:20', '2022-07-05 05:02:20'),
+('92', 'PAPUA BARAT', '2022-07-05 05:02:20', '2022-07-05 05:02:20');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `propinsi`
+--
+ALTER TABLE `propinsi`
+  ADD PRIMARY KEY (`propinsi_id`),
+  ADD KEY `propinsi_propinsi_index` (`propinsi`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
